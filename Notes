@@ -1,0 +1,15 @@
+class ==== className
+style="color:red" ==== style={{"color":"red"}}
+There must be no open tags
+
+<img>    ==== <img/>
+
+
+
+Parent Component
+
+<Child props.key="value"/>
+
+Child Component
+
+<h1>{props.key}</h1>
