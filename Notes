@@ -13,3 +13,16 @@ Parent Component
 Child Component
 
 <h1>{props.key}</h1>
+
+
+
+const [variable,setVariable] = useState([])
+
+Initial State-
+
+1-Blank
+2-number (0)
+3-boolean
+4-array
+5-object
+6-null

@@ -2,8 +2,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import Demo from "./Demo.js"
 import Props from "./Props.js";
-
-
+import StateHook from "./StateHook.js";
+import { useState } from "react";
 
 // function App() {
 //   return (
@@ -41,17 +41,33 @@ import Props from "./Props.js";
 
 
 
-function App() {
-  const userData={
-    name:"Student",
-    age:"237894",
-    address:"Indore"
-  }
+// function App() {
+//   const userData={
+//     name:"Student",
+//     age:"237894",
+//     address:"Indore"
+//   }
 
-  const marks=[34,45,57,78,23]
+//   const marks=[34,45,57,78,23]
+//   return (
+//     <>
+//     <Props user={userData} marks={marks}/>
+//     </>
+//   );
+// }
+
+
+function App() {
+  const [name,setName] = useState("guest")
   return (
     <>
-    <Props user={userData} marks={marks}/>
+    <input type="text" 
+    value={name} 
+    placeholder="Enter your name" 
+    onChange={(e)=>{
+        setName(e.target.value)
+    }}/>
+    <StateHook name={name}/>
     </>
   );
 }
