@@ -58,16 +58,9 @@ import { useState } from "react";
 
 
 function App() {
-  const [name,setName] = useState("guest")
   return (
     <>
-    <input type="text" 
-    value={name} 
-    placeholder="Enter your name" 
-    onChange={(e)=>{
-        setName(e.target.value)
-    }}/>
-    <StateHook name={name}/>
+    <StateHook/>
     </>
   );
 }
