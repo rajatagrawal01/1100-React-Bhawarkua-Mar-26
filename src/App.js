@@ -1,9 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Demo from "./Demo.js"
-import Props from "./Props.js";
+// import Props from "./Props.js";
 import StateHook from "./StateHook.js";
 import { useState } from "react";
+import Effect from "./Effect.js";
 
 // function App() {
 //   return (
@@ -60,7 +61,8 @@ import { useState } from "react";
 function App() {
   return (
     <>
-    <StateHook/>
+    {/* <StateHook/> */}
+    <Effect/>
     </>
   );
 }
