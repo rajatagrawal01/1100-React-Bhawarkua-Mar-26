@@ -59,10 +59,15 @@ import Effect from "./Effect.js";
 
 
 function App() {
+  const [showEffect, setShowEffect] = useState(true);
+
   return (
     <>
-    {/* <StateHook/> */}
-    <Effect/>
+      <button onClick={() => setShowEffect(!showEffect)}>
+        {showEffect ? 'Hide Effect Component' : 'Show Effect Component'}
+      </button>
+      <br/>
+      {showEffect && <Effect/>}
     </>
   );
 }
